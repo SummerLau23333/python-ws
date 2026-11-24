@@ -1,6 +1,6 @@
 # 日本节点合集订阅（11 节点）：5 个 lzzzz 老节点 + 6 个 lovezjy 新节点
-# 生成时间 2026-11-24；全部带 fingerprint: chrome；老节点 SNI=lzzzz520zjy.pages.dev，新节点 SNI=lovezjy520.cc.cd
-# 老 5 个上午+下午两次手机实测都不通（疑似 lzzzz 撤了日本批 UUID），放进来是为验证订阅路线；新 6 个是我这边筛查存活的
+# 2026-11-24 14:5x 重建：lovezjy 6 节点路径已按最新订阅刷新（池子路径约 20 分钟轮换一次，旧路径会失效）
+# 全部带 fingerprint: chrome；老节点 SNI=lzzzz520zjy.pages.dev，新节点 SNI=lovezjy520.cc.cd
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -78,7 +78,7 @@ proxies:
       path: /pdf/proxyip=ProxyIP.JP.CMLiussss.net
       headers:
         Host: lzzzz520zjy.pages.dev
-  - name: "天诚优选2 JP版 | 11-24 08:36 | BestCF.pages.dev"
+  - name: "S5公益优选 JP版 | 11-24 13:07 | BestCF.pages.dev"
     type: vless
     server: 162.159.198.1
     port: 443
@@ -89,63 +89,7 @@ proxies:
     fingerprint: chrome
     network: ws
     ws-opts:
-      path: /clip/urls/proxyip=ProxyIP.JP.CMLiussss.net
-      headers:
-        Host: lovezjy520.cc.cd
-  - name: "天诚优选2 | 小日本子 | JP | 172.104.89.73:443"
-    type: vless
-    server: 172.104.89.73
-    port: 443
-    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
-    udp: true
-    tls: true
-    servername: lovezjy520.cc.cd
-    fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /m/lesson/archives/proxyip=ProxyIP.JP.CMLiussss.net
-      headers:
-        Host: lovezjy520.cc.cd
-  - name: "天诚优选2 | 小日本子 | JP | 35.78.169.69:443"
-    type: vless
-    server: 35.78.169.69
-    port: 443
-    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
-    udp: true
-    tls: true
-    servername: lovezjy520.cc.cd
-    fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /mobile/albums/proxyip=ProxyIP.JP.CMLiussss.net
-      headers:
-        Host: lovezjy520.cc.cd
-  - name: "天诚优选2 | 小日本子 | JP | 147.79.20.191:443"
-    type: vless
-    server: 147.79.20.191
-    port: 443
-    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
-    udp: true
-    tls: true
-    servername: lovezjy520.cc.cd
-    fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /ep/about/proxyip=ProxyIP.JP.CMLiussss.net
-      headers:
-        Host: lovezjy520.cc.cd
-  - name: "天诚优选2 | 分享免费优选网 BestCF.pages.dev"
-    type: vless
-    server: 162.159.197.1
-    port: 443
-    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
-    udp: true
-    tls: true
-    servername: lovezjy520.cc.cd
-    fingerprint: chrome
-    network: ws
-    ws-opts:
-      path: /setting/files/cb/proxyip=ProxyIP.JP.CMLiussss.net
+      path: /new/play/proxyip=ProxyIP.JP.CMLiussss.net
       headers:
         Host: lovezjy520.cc.cd
   - name: "S5公益优选 | 小日本儿 | JP | 150.230.212.247:443"
@@ -159,7 +103,63 @@ proxies:
     fingerprint: chrome
     network: ws
     ws-opts:
-      path: /courses/proxyip=ProxyIP.JP.CMLiussss.net
+      path: /favourites/proxyip=ProxyIP.JP.CMLiussss.net
+      headers:
+        Host: lovezjy520.cc.cd
+  - name: "S5公益优选 | 分享免费优选网 BestCF.pages.dev"
+    type: vless
+    server: 162.159.197.1
+    port: 443
+    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
+    udp: true
+    tls: true
+    servername: lovezjy520.cc.cd
+    fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /links/drama/film/proxyip=ProxyIP.JP.CMLiussss.net
+      headers:
+        Host: lovezjy520.cc.cd
+  - name: "天诚优选2 | 小日本子 | JP | 172.104.89.73:443"
+    type: vless
+    server: 172.104.89.73
+    port: 443
+    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
+    udp: true
+    tls: true
+    servername: lovezjy520.cc.cd
+    fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /search/proxyip=ProxyIP.JP.CMLiussss.net
+      headers:
+        Host: lovezjy520.cc.cd
+  - name: "天诚优选2 | 小日本子 | JP | 35.78.169.69:443"
+    type: vless
+    server: 35.78.169.69
+    port: 443
+    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
+    udp: true
+    tls: true
+    servername: lovezjy520.cc.cd
+    fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /blog/proxyip=ProxyIP.JP.CMLiussss.net
+      headers:
+        Host: lovezjy520.cc.cd
+  - name: "天诚优选2 | 小日本子 | JP | 147.79.20.191:443"
+    type: vless
+    server: 147.79.20.191
+    port: 443
+    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
+    udp: true
+    tls: true
+    servername: lovezjy520.cc.cd
+    fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /novel/go/proxyip=ProxyIP.JP.CMLiussss.net
       headers:
         Host: lovezjy520.cc.cd
 
@@ -172,12 +172,12 @@ proxy-groups:
       - "天诚优选1 | 小日本儿 | JP | 39.106.2.1:443"
       - "天诚优选2 | 小日本子 | JP | 126.217.78.118:443"
       - "天诚优选1 | 小日本儿 | JP | 54.150.61.231:443"
-      - "天诚优选2 JP版 | 11-24 08:36 | BestCF.pages.dev"
+      - "S5公益优选 JP版 | 11-24 13:07 | BestCF.pages.dev"
+      - "S5公益优选 | 小日本儿 | JP | 150.230.212.247:443"
+      - "S5公益优选 | 分享免费优选网 BestCF.pages.dev"
       - "天诚优选2 | 小日本子 | JP | 172.104.89.73:443"
       - "天诚优选2 | 小日本子 | JP | 35.78.169.69:443"
       - "天诚优选2 | 小日本子 | JP | 147.79.20.191:443"
-      - "天诚优选2 | 分享免费优选网 BestCF.pages.dev"
-      - "S5公益优选 | 小日本儿 | JP | 150.230.212.247:443"
 
 rules:
   - MATCH,🚀 节点选择
