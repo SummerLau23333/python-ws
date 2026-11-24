@@ -1,0 +1,47 @@
+# Clash 订阅：lovezjy 日本节点 ×2（我这边实测 1MB 下载都通）
+# 生成时间 2026-11-24；SNI/Host 为 lovezjy520.cc.cd；fingerprint: chrome 是关键参数
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+
+proxies:
+  - name: "天诚优选2 | 小日本子 | JP | 172.104.89.73:443"
+    type: vless
+    server: 172.104.89.73
+    port: 443
+    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
+    udp: true
+    tls: true
+    servername: lovezjy520.cc.cd
+    fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /gif/thread/proxyip=ProxyIP.JP.CMLiussss.net
+      headers:
+        Host: lovezjy520.cc.cd
+  - name: "天诚优选2 | 小日本子 | JP | 147.79.20.191:443"
+    type: vless
+    server: 147.79.20.191
+    port: 443
+    uuid: 7da1b61e-b422-4d01-868f-20fd4a525a02
+    udp: true
+    tls: true
+    servername: lovezjy520.cc.cd
+    fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /classify/proxyip=ProxyIP.JP.CMLiussss.net
+      headers:
+        Host: lovezjy520.cc.cd
+
+proxy-groups:
+  - name: "🚀 节点选择"
+    type: select
+    proxies:
+      - "天诚优选2 | 小日本子 | JP | 172.104.89.73:443"
+      - "天诚优选2 | 小日本子 | JP | 147.79.20.191:443"
+
+rules:
+  - MATCH,🚀 节点选择
